@@ -2,6 +2,7 @@
 
 module.exports = function(environment) {
   var ENV = {
+  socrata: { dataRepo: 'performance.reno.gov' },
     modulePrefix: 'demo-app2',
     environment: environment,
     baseURL: '/',

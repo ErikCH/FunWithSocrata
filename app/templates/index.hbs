@@ -1,0 +1,10 @@
+{{outlet}}
+
+{{ember-chart type="bar" options=chartOptions data=chartData height="200"}}
+
+
+
+{{#each model as |zip|}}
+	{{zip.whatIsYourZipCode}}<br>
+	{{zip.whatIsYourAge}}<br>
+{{/each}}
