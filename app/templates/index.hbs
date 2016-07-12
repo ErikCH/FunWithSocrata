@@ -2,8 +2,16 @@
 
 {{ember-chart type="bar" options=chartOptions data=chartData height="200"}}
 
+<select onchange={{action "selectChoice" value="target.value"}}>
+	<option value="sharedCommunityGarden">Shared Community Garden</option>
+	<option value="highSpeedInternet">High Speed Internet</option>
+	<option value="lowNoiseLevels">Low Noise Levels</option>
+	<option value="proximityToFriendsFamily">Proximity To Friends</option>
+	<option value="publicWiFi">Public Wifi</option>
+	<option value="publicArt">Public Art</option>
+</select>
 
-
+<br>
 {{#each model as |zip|}}
 	{{zip.whatIsYourZipCode}}<br>
 	{{zip.whatIsYourAge}}<br>
